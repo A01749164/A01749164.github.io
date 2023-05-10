@@ -1,42 +1,157 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Mi Portafolio</h1>
-      <nav>
-        <ul>
-          <li><a href="sobre-mi.html">Sobre mí</a></li>
-          <li><a href="habilidades.html">Habilidades</a></li>
-          <li><a href="proyectos.html">Proyectos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Mi Portafolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="menu">
+        <ol>
+          <li>
+            <a class="link" href="#portafolio">Portafolio</a>
+          </li>
+          <li>
+            <a class="link" href="#eventos">Experiencia</a>
+          </li>
+          <li>
+            <a class="link" href="#contacto">Contacto</a>
+          </li>
+        </ol>
       </nav>
-    </header>
-    <main>
-      <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>Texto sobre mí.</p>
-      </section>
-      <section id="habilidades">
-        <h2>Habilidades</h2>
-        <p>Texto sobre mis habilidades.</p>
-      </section>
-      <section id="proyectos">
-        <h2>Proyectos</h2>
-        <p>Texto sobre mis proyectos.</p>
-      </section>
-      <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Formulario de contacto.</p>
-      </section>
-    </main>
-    <footer>
-      <p>Derechos reservados &copy; 2023</p>
-    </footer>
-  </body>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>
+        Hola! Soy <strong>Jeovani Hernandez</strong> <br /> Estudiante de
+        <strong>Ingeniería en Tecnologías
+          Computacionales</strong> <br>en el <strong>Tec de Monterrey CEM</strong>
+      </h1>
+    </div>
+    <div class="container">
+      <!--hero-image   eliminar -->
+      <img src="images/Perfil.jpg" width="200" alt="imagen principal del
+          sitio">
+    </div>
+  </section>
+
+  <section id="portafolio" class="portfolio">
+    <div class="container">
+      <h2>Portafolio (Proyectos Destacados)</h2>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Desarrollo de una página web para NDS</h3>
+          <!--<h6 class="project-course">Auxiliar General</h6>-->
+          <p class="project-date"><small><strong>Fecha:</strong> Febrero 2023 - Presente</small></p>
+          <!--<p class="project-url"><small><strong>Puedes verlo en:</strong>
+                www.prueba.com</small></p>-->
+          <p class="project-description">Creación de una página web para la venta de automóviles mediante React y
+            TypeScript,
+            así como el uso de MongoDB para la recopilación de información.</p>
+        </div>
+
+        <figure class="project-imageContainer">
+          <img class="project-image" width="450" src="images/NDS.png" alt="NDS">
+        </figure>
+      </article>
+
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Videojuego 2D para STEAM</h3>
+          <!--<h6 class="project-course">Auxiliar General</h6>-->
+          <p class="project-date"><small><strong>Fecha:</strong> Febrero 2021 - Junio 2021</small></p>
+          <!--<p class="project-url"><small><strong>Puedes verlo en:</strong>
+                www.prueba.com</small></p>-->
+          <p class="project-description">Creación de un prototipo en Unity, con la finalidad de buscar a fomentar el
+            interés hacia
+            las carreras STEAM, principalmente ingeniería en biotecnología, ingeniería en tecnologías
+            computacionales, e ingeniería en sistemas digitales y robótica, así como el desarrollo de
+            la competencia de Pensamiento Lógico, para coadyuvar con Movimiento STEAM a lograr
+            su objetivo.</p>
+        </div>
+
+        <figure class="project-imageContainer">
+          <img class="project-image"  width="500" src="images/platzi-video-react-native.png"
+            alt="prouyecto del curso de React Native">
+        </figure>
+      </article>
+
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Prototipo para identificar síntomas de COVID-19</h3>
+          <!--<h6 class="project-course">Auxiliar General</h6>-->
+          <p class="project-date"><small><strong>Fecha:</strong> Agosto 2020 - Diciembre 2020</small></p>
+          <!--<p class="project-url"><small><strong>Puedes verlo en:</strong>
+                www.prueba.com</small></p>-->
+          <p class="project-description">Elaboración de un prototipo por medio de dos sensores que me ayudaron a
+            recopilar los
+            tres datos biométricos importantes (Oximetría, Ritmo Cardiaco y Temperatura) para
+            saber si una persona tenía síntomas de COVID-19, utilizando Arduino, php, MySQL y html
+            para desplegar la información recopilada.</p>
+        </div>
+
+        <figure class="project-imageContainer">
+          <img class="project-image" width="500" src="images/platzi-video-react-native.png"
+            alt="prouyecto del curso de React Native">
+        </figure>
+      </article>
+    </div>
+  </section>
+
+  <div class="container">
+    <h2 class="event-list-title">Más sobre mi experiencia</h2>
+  </div>
+
+  <section id="eventos" class="event-list">
+    <div class="container">
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Uso de Software</h3>
+          <h6 class="project-title">Intermedio</h6>
+        </div>
+
+        <figure class="project-imageContainer">
+          <img class="project-image" width="400" src="images/Intermedio.png" alt="prouyecto del curso de React Native">
+        </figure>
+      </article>
+
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Uso de Software</h3>
+          <h6 class="project-title">Básico</h6>
+        </div>
+
+        <figure class="project-imageContainer">
+          <img class="project-image" width="400" src="images/Básico.png" alt="prouyecto del curso de React Native">
+        </figure>
+      </article>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <div class="container">
+      <div class="social">
+        
+        <div>
+          <h1>Contacto</h1>
+          <a href="https://www.linkedin.com/in/jeovani-hb/" class="social-link linkedin"></a>
+          <a href="https://www.linkedin.com/in/jeovani-hb/" class="social-link cv"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+</body>
+
 </html>
